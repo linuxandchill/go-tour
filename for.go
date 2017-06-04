@@ -10,4 +10,12 @@ func main() {
 	}
 
 	fmt.Println(sum)
+
+	new_sum := 1
+	//basically a while loop
+	for new_sum < 1000 {
+		new_sum += new_sum
+
+	}
+	fmt.Println(new_sum)
 }
