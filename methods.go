@@ -7,11 +7,14 @@ type Person struct {
 	age  int
 }
 
-func (p Person) sayName() string {
+//func (p Person) sayName() string { or
+
+func sayName(p Person) string {
 	return p.name
 }
 
 func main() {
 	p := Person{"bill", 32}
-	fmt.Println(p.sayName())
+	//fmt.Println(p.sayName())
+	fmt.Println(sayName(p))
 }
